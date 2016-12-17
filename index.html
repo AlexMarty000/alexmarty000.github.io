@@ -1,86 +1,291 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="ru">
-<!--<![endif]-->
+
 <head>
-	<meta charset="utf-8" />
-	<title>Заголовок</title>
-	<meta name="description" content="" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="favicon.png" />
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
-	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
-	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
-	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/media.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Заголовок </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-    <header class="top_header">
-        <div class="header_topline">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                       <button class="auth_buttons hidden-md hidden-lg"><i class="fa fa-user" aria-hidden="true"></i></button>
-                        <div class="top_links">
-                            <a href="#">Вход</a> / 
-                            <a href="#">Регистрация</a>
+    <!--Navs -->
+    <nav class="navbar navbar-fixed-top nav_style" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="menu">Меню</span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#partnership">Сотрудничество</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--EndNavs -->
+
+    <!--header -->
+    <header>
+        <div class="container-fluid">
+            <div class="slider">
+                <p></p>
+                <h1>Alex Marty</h1>
+                <p>gfdfgdfhd</p>
+                <a href="#about">
+                    <div class="h_to_about">Узнай больше</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--EndHeader -->
+
+    <!--About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 title_section">
+                    <div>
+                        <h2>Обо мне</h2>
+                        <p>Я Алекс Марти. Начинающий фрилансер. Самоучка в верстке сайтов.
+                            <br> Небольшой перечень моих <b>знаний и навыков:</b></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+                    <div class="skills">
+                        <div class="skills_info">
+                            <i class="fa fa-html5" aria-hidden="true"></i>
+
+                            <p>HTML5 + CSS3</p>
                         </div>
-                        <div class="soc_buttons">
-                            <a href="#"><span class="fa fa-vk"></span></a>
-                            <a href="#"><span class="fa fa-facebook-square"></span></a>
-                            <a href="#"><span class="fa fa-twitter"></span></a>
+                    </div>
+                    <div class="skills">
+                        <div class="skills_info">
+                            <i class="fa fa-link " aria-hidden="true"></i>
+
+                            <p>Подключение шрифтов </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="skills">
+                        <div class="skills_info">
+                            <i class="mym mym_b" aria-hidden="true"></i>
+
+                            <p>Less</p>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skills_info">
+                            <i class="fa fa-file-code-o " aria-hidden="true"></i>
+                            <p>Простой код</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="skills">
+                        <div class="skills_info">
+                            <i class="mym mym_a" aria-hidden="true"></i>
+                            <p>Bootstrap 3</p>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skills_info">
+                            <i class="fa fa-commenting-o " aria-hidden="true"></i>
+                            <p>Комментарии к коду</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="skills">
+                        <div class="skills_info">
+                            <i class="fa fa-laptop" aria-hidden="true"></i><i class="fa fa-mobile" aria-hidden="true"></i>
+                            <p>Адаптивная верстка</p>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skills_info">
+                            <i class="fa" aria-hidden="true">w3c</i>
+                            <p>Валидность</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-12">
+                    <div class="skills">
+                        <div class="skills_info">
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <p>Реализация pixel perfect</p>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="skills_info">
+                            <i class="fa fa-internet-explorer" aria-hidden="true"></i>
+                            <p>Кроссбраузерность</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--EndAbout -->
+
+    <!--Partnership-->
+    <section id="partnership" class="partnership">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 title_section">
+                    <div>
+                        <h2>Сотрудничество</h2>
+                        <p>Я открыт для любых <b>разумных</b> предложений. Сделаю в срок и <b>сравнительно не дорого</b>.
+                            <br> Наше с вами сотрудничество можно разделить на несколько простых этапов:</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 part_info">
+                            <ul>
+
+                                <li>1. Связаться со мной одним из доступных <a href="#contacts">способов</a>.</li>
+                                <li>2. Предоставить psd-шаблон желаемой верстки и ТЗ, со всем описанием, что и как должно функционировать.</li>
+                                <li>3. 50% предоплата.</li>
+                                <li>4. В оговоренный срок высылаю Вам готовую верстку.</li>
+                                <li>5. Окончательный расчет по верстке сайта.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!--EndPartnership-->
+
+
+
+    <!--Contact-->
+    <section id="contacts">
         <div class="container">
-            <div class="col-md-12">
-                <div class="row">
-                    <a href="#" class="logo">moDesign</a>
-                    
-                    <nav class="main_menu clearfix">
-                       <button class="main_menu_button"><i class="fa fa-bars"></i></button>
-                        <ul>
-                            <li><a href="#" class="active">Главная</a></li>
-                            <li><a href="#">Приложение</a></li>
-                            <li><a href="#">Портфолио</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                        </ul>
-                        <div class="top_contacts"><i class="fa fa-mobile-phone"></i> 8-800-555-3535</div>
-                    </nav>
+            <div class="row">
+                <div class="col-md-12 title_section">
+                    <div>
+                        <h2>Контакты</h2>
+                        <p>Связаться со мной можно с 7<sup>00</sup> до 16<sup>00</sup> по МСК (ПН-СБ)</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="contact contact_mail">
+                        <div class="contact_info">
+                            <button class="btn btn-default link_style" data-toggle="modal" data-target="#email_form">
+                                Связаться по Email
+                            </button>
+                        </div>
+                        <p>E-mail</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="contact contact_vk">
+                        <div class="contact_info">
+                            <a href="#" class="btn btn-default link_style">Профиль в ВК</a>
+
+                        </div>
+                        <p>Вконтакте</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="contact contact_fl">
+                        <div class="contact_info ">
+                            <a href="#" class="btn btn-default link_style">Профиль на FL</a>
+                        </div>
+                        <p>Биржа фриланса</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+    <!--EndContact-->
+    <footer>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-md-offset-4 col-md-4">
+                        <div class="">
+                            dd
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Modal-->
+    <div class="modal fade" id="email_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Название модали</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="form_email" method="post" action="send.php">
+                        <label for="your_email">Ваш E-mail:</label>
+                        <input type="email" class="form-control" id="your_email" placeholder="Введите ваш E-mail">
+                        <br>
+                        <label for="your_name">Ваше имя:</label>
+                        <input type="text" class="form-control" id="your_name" placeholder="Введите Ваше имя">
+                        <br>
+                        <label for="your_message">Ваше имя:</label>
+                        <textarea class="form-control" id="your_message" rows="4"></textarea>
+                        <br>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
 
 
 
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
-	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
-	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	<script src="libs/countdown/jquery.plugin.js"></script>
-	<script src="libs/countdown/jquery.countdown.min.js"></script>
-	<script src="libs/countdown/jquery.countdown-ru.js"></script>
-	<script src="libs/landing-nav/navigation.js"></script>
-	<script src="js/common.js"></script>
-	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
-	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+            </div>
+        </div>
+    </div>
+    <!--EndModal-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $(document).ready(
+            function () {
+                $("html").niceScroll({
+                    cursorcolor: "#000"
+                });
+            }
+        );
+    </script>
 </body>
+
 </html>
