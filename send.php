@@ -1,2 +1,0 @@
-$mess = 'Имя заявителя: '.$_POST['your_name'].' Текст заявки: '.$_POST['your_message'].' Обратный Email: '.$_POST['your_email'].;
-mail("a.mail.000@gmail.com", "Заявка с сайта", $mess, $_POST['your_email'] );

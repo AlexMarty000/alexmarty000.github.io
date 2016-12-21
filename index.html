@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Заголовок </title>
+    <title>AlexMarty. Адаптивная верстка сайтов</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,13 +25,13 @@
 
 <body>
     <!--Navs -->
-    <nav class="navbar navbar-fixed-top nav_style" role="navigation">
+    <nav class="navbar navbar-fixed-top nav_style" id="menu" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
                     <span class="menu">Меню</span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="#"><span class="am_logo">АМ</span></a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -48,11 +49,11 @@
     <!--header -->
     <header>
         <div class="container-fluid">
-            <div class="slider">
-                <p></p>
+            <div class="slider wow fadeInUp" data-wow-delay="0.2s">
+                
                 <h1>Alex Marty</h1>
-                <p>gfdfgdfhd</p>
-                <a href="#about">
+                <p>Адаптивная верстка сайтов</p>
+                <a id="h_to_about" href="#about">
                     <div class="h_to_about">Узнай больше</div>
                 </a>
             </div>
@@ -66,15 +67,15 @@
             <div class="row">
                 <div class="col-md-12 title_section">
                     <div>
-                        <h2>Обо мне</h2>
-                        <p>Я Алекс Марти. Начинающий фрилансер. Самоучка в верстке сайтов.
+                        <h2 class=" wow fadeIn">Обо мне</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">Я Алекс Марти. Начинающий фрилансер. Самоучка в верстке сайтов.
                             <br> Небольшой перечень моих <b>знаний и навыков:</b></p>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+                <div class="col-md-offset-1 col-md-2 col-sm-4 col-xs-6 wow zoomIn" data-wow-delay="0.2s">
                     <div class="skills">
                         <div class="skills_info">
                             <i class="fa fa-html5" aria-hidden="true"></i>
@@ -90,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
+                <div class="col-md-2 col-sm-4 col-xs-6 wow zoomIn" data-wow-delay="0.3s">
                     <div class="skills">
                         <div class="skills_info">
                             <i class="mym mym_b" aria-hidden="true"></i>
@@ -105,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
+                <div class="col-md-2 col-sm-4 col-xs-6 wow zoomIn" data-wow-delay="0.4s">
                     <div class="skills">
                         <div class="skills_info">
                             <i class="mym mym_a" aria-hidden="true"></i>
@@ -119,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="col-md-2 col-sm-6 col-xs-6 wow zoomIn" data-wow-delay="0.5s">
                     <div class="skills">
                         <div class="skills_info">
                             <i class="fa fa-laptop" aria-hidden="true"></i><i class="fa fa-mobile" aria-hidden="true"></i>
@@ -133,7 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12">
+                <div class="col-md-2 col-sm-6 col-xs-12 wow zoomIn" data-wow-delay="0.6s">
                     <div class="skills">
                         <div class="skills_info">
                             <i class="fa fa-picture-o" aria-hidden="true"></i>
@@ -159,27 +160,28 @@
             <div class="row">
                 <div class="col-md-12 title_section">
                     <div>
-                        <h2>Сотрудничество</h2>
-                        <p>Я открыт для любых <b>разумных</b> предложений. Сделаю в срок и <b>сравнительно не дорого</b>.
+                        <h2 class=" wow fadeIn">Сотрудничество</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">Я открыт для любых <b>разумных</b> предложений. Сделаю в срок и <b>сравнительно не дорого</b>.
                             <br> Наше с вами сотрудничество можно разделить на несколько простых этапов:</p>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 part_info">
-                            <ul>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 part_info">
+                        <ul>
 
-                                <li>1. Связаться со мной одним из доступных <a href="#contacts">способов</a>.</li>
-                                <li>2. Предоставить psd-шаблон желаемой верстки и ТЗ, со всем описанием, что и как должно функционировать.</li>
-                                <li>3. 50% предоплата.</li>
-                                <li>4. В оговоренный срок высылаю Вам готовую верстку.</li>
-                                <li>5. Окончательный расчет по верстке сайта.</li>
-                            </ul>
-                        </div>
+                            <li class="wow fadeInLeft" data-wow-delay="0.2s">1. Связаться со мной одним из доступных <a href="#contacts" id="p_to_contacts">способов</a>.</li>
+                            <li class="wow fadeInLeft" data-wow-delay="0.3s">2. Предоставить psd-шаблон желаемой верстки и ТЗ, со всем описанием, что и как должно функционировать.</li>
+                            <li class="wow fadeInLeft" data-wow-delay="0.4s">3. 50% предоплата.</li>
+                            <li class="wow fadeInLeft" data-wow-delay="0.5s">4. В оговоренный срок высылаю Вам готовую верстку.</li>
+                            <li class="wow fadeInLeft" data-wow-delay="0.6s">5. Окончательный расчет по верстке сайта.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
     <!--EndPartnership-->
 
@@ -191,33 +193,32 @@
             <div class="row">
                 <div class="col-md-12 title_section">
                     <div>
-                        <h2>Контакты</h2>
-                        <p>Связаться со мной можно с 7<sup>00</sup> до 16<sup>00</sup> по МСК (ПН-СБ)</p>
+                        <h2 class=" wow fadeIn">Контакты</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">Связаться со мной можно с 7<sup>00</sup> до 16<sup>00</sup> по МСК (ПН-СБ)</p>
                     </div>
                 </div>
-                <div class="col-sm-4 col-xs-12">
+                <div class="col-sm-4 col-xs-12 wow zoomIn" data-wow-delay="0.2s">
                     <div class="contact contact_mail">
-                        <div class="contact_info">
-                            <button class="btn btn-default link_style" data-toggle="modal" data-target="#email_form">
-                                Связаться по Email
-                            </button>
+                            <div class="contact_info">
+                            <a href="mailto:a.marty.000@gmail.com" class="btn btn-default link_style">a.marty.000@gmail.com</a>
+
                         </div>
                         <p>E-mail</p>
                     </div>
                 </div>
-                <div class="col-sm-4 col-xs-12">
+                <div class="col-sm-4 col-xs-12 wow zoomIn" data-wow-delay="0.3s">
                     <div class="contact contact_vk">
                         <div class="contact_info">
-                            <a href="#" class="btn btn-default link_style">Профиль в ВК</a>
+                            <a href="https://vk.com/id386424472" class="btn btn-default link_style">Профиль в ВК</a>
 
                         </div>
                         <p>Вконтакте</p>
                     </div>
                 </div>
-                <div class="col-sm-4 col-xs-12">
+                <div class="col-sm-4 col-xs-12 wow zoomIn" data-wow-delay="0.4s">
                     <div class="contact contact_fl">
                         <div class="contact_info ">
-                            <a href="#" class="btn btn-default link_style">Профиль на FL</a>
+                            <a href="https://www.fl.ru/users/alexmarty000/" class="btn btn-default link_style">Профиль на FL</a>
                         </div>
                         <p>Биржа фриланса</p>
                     </div>
@@ -231,45 +232,14 @@
             <div class="container-fluid">
                 <div class="row ">
                     <div class="col-md-offset-4 col-md-4">
-                        <div class="">
-                            dd
+                        <div class="copyright">
+                            <i class="fa fa-copyright" aria-hidden="true"></i> 2016. AlexMarty. Адаптивная верстка сайтов.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!--Modal-->
-    <div class="modal fade" id="email_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Название модали</h4>
-                </div>
-                <div class="modal-body">
-                    <form name="form_email" method="post" action="send.php">
-                        <label for="your_email">Ваш E-mail:</label>
-                        <input type="email" class="form-control" id="your_email" placeholder="Введите ваш E-mail">
-                        <br>
-                        <label for="your_name">Ваше имя:</label>
-                        <input type="text" class="form-control" id="your_name" placeholder="Введите Ваше имя">
-                        <br>
-                        <label for="your_message">Ваше имя:</label>
-                        <textarea class="form-control" id="your_message" rows="4"></textarea>
-                        <br>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                        <button type="submit" class="btn btn-primary">Отправить</button>
-                    </form>
-                </div>
-
-
-
-            </div>
-        </div>
-    </div>
-    <!--EndModal-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
@@ -285,6 +255,57 @@
                 });
             }
         );
+    </script>
+    <script>
+    $(document).ready(function () {
+            $("#menu").on("click", "a", function (event) {
+                //отменяем стандартную обработку нажатия по ссылке
+                event.preventDefault();
+
+                //забираем идентификатор бока с атрибута href
+                var id = $(this).attr('href'),
+
+                    //узнаем высоту от начала страницы до блока на который ссылается якорь
+                    top = $(id).offset().top;
+
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({
+                    scrollTop: top
+                }, 500);
+            });
+       
+            $("#h_to_about").on("click", function (event) {
+                //отменяем стандартную обработку нажатия по ссылке
+                event.preventDefault();
+
+                //забираем идентификатор бока с атрибута href
+                var id = $(this).attr('href'),
+
+                    //узнаем высоту от начала страницы до блока на который ссылается якорь
+                    top = $(id).offset().top;
+
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({
+                    scrollTop: top
+                }, 500);
+            });
+        $("#p_to_contacts").on("click", function (event) {
+                //отменяем стандартную обработку нажатия по ссылке
+                event.preventDefault();
+
+                //забираем идентификатор бока с атрибута href
+                var id = $(this).attr('href'),
+
+                    //узнаем высоту от начала страницы до блока на который ссылается якорь
+                    top = $(id).offset().top;
+
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({
+                    scrollTop: top
+                }, 500);
+            });
+        });
+    
     </script>
 </body>
 

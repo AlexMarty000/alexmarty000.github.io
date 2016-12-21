@@ -1,49 +1,59 @@
-
 /*============    Fonts   ===========*/
+
 @font-face {
     font-family: 'svgfont_1regular';
-    src: url('../fonts/myfont/font-webfont.woff2') format('woff2'),
-         url('../fonts/myfont/font-webfont.woff') format('woff');
+    src: url('../fonts/myfont/font-webfont.woff2') format('woff2'), url('../fonts/myfont/font-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
-.mym{
-    display:block;
-    font:normal normal normal 14px/1 'svgfont_1regular'; 
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    text-rendering:auto;
+.mym {
+    display: block;
+    font: normal normal normal 14px/1 'svgfont_1regular';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
     text-transform: lowercase;
-    
-    
 }
-.mym_b:before{
+
+.mym_b:before {
     content: 'b';
 }
-.mym_a:before{
+
+.mym_a:before {
     content: 'a';
 }
-/*============    Main    ===========*/
 
+
+/*============    Main    ===========*/
+.am_logo{
+    border: 2px solid #fff;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+    &:hover{
+        background-color: #5e2c7d;
+        border: 2px solid rgba(255,255,255,0.5);
+    }
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: #7a7a7a;
 }
-.menu{
+
+.menu {
     text-transform: uppercase;
 }
+
 .title_section {
     text-align: center;
     background-color: #fff;
     div {
         display: inline-block;
-        margin: 20px;
+        margin: 40px;
         h2 {
             color: #424242;
             font-weight: bold;
-            font-size: 40px;
+            font-size: 24px;
             letter-spacing: 5px;
             position: relative;
             display: inline-block;
@@ -116,6 +126,14 @@ header {
             font-size: 80px;
             color: #fff;
         }
+        p{
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 100;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
     }
     .h_to_about {
         display: inline-block;
@@ -144,7 +162,6 @@ header {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         transition: all 0.4s ease-in-out;
         text-transform: uppercase;
-        
         .skills_info {
             position: absolute;
             top: 0;
@@ -156,13 +173,13 @@ header {
             margin: auto;
             transform: scale(1);
             transition: all 0.4s ease-in-out;
-            i{
+            i {
                 font-size: 40px;
                 margin: 0 5px;
             }
             p {
                 margin-top: 5px;
-               font-size: 10px;
+                font-size: 10px;
             }
         }
         &:hover {
@@ -180,8 +197,6 @@ header {
 .partnership {
     margin-top: 50px;
     background: url("../img/bg_partnership.jpg") no-repeat 50% 50%;
-    
-    
     .part_info {
         padding: 80px 0;
         font-size: 18px;
@@ -189,18 +204,14 @@ header {
         li {
             list-style-type: none;
             margin: 20px 0;
-           
         }
-        a{
+        a {
             color: #5e2c7d;
             text-decoration: none;
             font-weight: bold;
-            
         }
     }
 }
-
-
 
 
 /*============    Contacts   ===========*/
@@ -212,7 +223,7 @@ header {
     box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.6);
     transition: all 0.4s ease-in-out;
     text-align: center;
-    p{
+    p {
         color: #fff;
         position: absolute;
         top: 40%;
@@ -221,7 +232,6 @@ header {
         right: 10px;
         transition: all 0.4s ease-in-out;
         text-transform: uppercase;
-        
     }
     .contact_info {
         position: absolute;
@@ -231,41 +241,42 @@ header {
         opacity: 0;
         transition: all 0.4s ease-in-out;
         color: #fff;
-        
-        
     }
-    
     &:hover {
         box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0.6);
         .contact_info {
-            
             opacity: 1;
             top: 45%;
         }
-        p{
+        p {
             color: #fff;
             top: 10%;
         }
     }
 }
-.contact_mail{
+
+.contact_mail {
     background: url(../img/bg_contacts_mail.jpg) no-repeat 50% 50%;
     background-size: 100%;
 }
-.contact_vk{
+
+.contact_vk {
     background: url(../img/bg_contacts_vk.jpg) no-repeat 50% 50%;
     background-size: 100%;
 }
-.contact_fl{
+
+.contact_fl {
     background: url(../img/bg_contacts_fl.jpg) no-repeat 50% 50%;
     background-size: 100%;
 }
-.link_style{
+
+.link_style {
     background-color: #5e2c7d;
     border: none;
     border-radius: 0;
     color: #fff;
 }
+
 
 /*============    	Footer    ===========*/
 
@@ -274,21 +285,106 @@ header {
     padding: 50px 0;
     background-color: #262626;
 }
+.copyright{
+    font-size: 12px;
+    text-align: center;
+}
 
 
 /*============    	АДАПТИВ    ===========*/
 
-@media(min-width:0px) and (max-width:320px) {}
-
-@media(min-width:321px) and (max-width:480px) {}
-
-@media(min-width:481px) and (max-width:768px) {
-   
-    .partnership{
+@media(min-width:0px) and (max-width:320px) {
+    header {
+        .slider {
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+    .partnership {
         margin: 0;
+        .part_info {
+            padding: 20px 0;
+            font-size: 16px;
+        }
+    }
+    .title_section {
+        div {
+            margin-bottom: 0;
+            p {
+                font-size: 14px;
+                margin-top: 15px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+    .contact {
+        
+            p {
+                font-size: 26px;
+            }
+        
     }
 }
 
-@media(min-width:769px) and (max-width:992px) {}
+@media(min-width:321px) and (max-width:480px) {
+     header {
+        .slider {
+            h1 {
+                font-size: 60px;
+            }
+        }
+    }
+    
+    
+     .partnership {
+        margin: 0;
+        .part_info {
+            padding: 20px 0;
+            font-size: 16px;
+        }
+    }
+   
+    .contact {
+        
+            p {
+                font-size: 28px;
+            }
+        
+    }
+}
 
-@media(min-width:993px) and (max-width:1200px) {}
+@media(min-width:481px) and (max-width:768px) {
+.contact {
+        
+            p {
+                top:45%;
+                font-size: 22px;
+            }
+        
+    }
+    
+}
+
+@media(min-width:769px) and (max-width:992px) {
+    .contact {
+        
+            p {
+                font-size: 20px;
+            }
+        
+    }
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+       .contact {
+        
+            p {
+                font-size: 28px;
+            }
+        
+    }
+        
+    }
